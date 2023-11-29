@@ -1,0 +1,35 @@
+<robot name="laser"
+  xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:property name="laser_length" value="0.05" />
+  <xacro:property name="laser_radius" value="0.05" />
+  <xacro:property name="laser_x" value="0.0" />
+  <xacro:property name="laser_y" value="0.0" />
+  <xacro:property name="laser_z" value="${base_link_length / 2 + laser_length / 2}" />
+  <xacro:property name="laser_m" value="0.1" />
+  <link name="laser">
+    <visual>
+      <geometry>
+        <cylinder radius="${laser_radius}" length="${laser_length}" />
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+      <material name="">
+        <color rgba="0.0 0.0 0.0 0.75" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="${laser_radius}" length="${laser_length}" />
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+    </collision>
+    <xacro:cylinder_inertial_matrix m="${laser_m}" r="${laser_radius}" h="${laser_length}" />
+  </link>
+  <joint name="laser2base_link" type="fixed">
+    <parent link="base_link" />
+    <child link="laser" />
+    <origin xyz="${laser_x} ${laser_y} ${laser_z}" />
+  </joint>
+  <gazebo reference="laser">
+    <material>Gazebo/Black</material>
+  </gazebo>
+</robot>

@@ -1,0 +1,38 @@
+<robot name="imu"
+  xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:property name="imu_size" value="0.01" />
+  <xacro:property name="imu_x" value="0" />
+  <xacro:property name="imu_y" value="0" />
+  <xacro:property name="imu_z" value="${laser_length / 2 + imu_size / 2}" />
+  <xacro:property name="imu_m" value="0.01" />
+
+  <link name="imu">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <box size="${imu_size} ${imu_size} ${imu_size}"/>
+      </geometry>
+      <material name= "red">
+        <color rgba="1.0 0.0 0.0 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="${imu_size} ${imu_size} ${imu_size}" />
+      </geometry>
+      <origin xyz="0.0 0.0 0" rpy="0.0 0.0 0.0" />
+    </collision>
+    <xacro:box_inertial_matrix m = "${imu_m}" l = "${imu_size}" w = "${imu_size}" h = "${imu_size}"/>
+  </link>
+
+  <joint name="imutolaser" type="fixed">
+    <parent link="laser"/>
+    <child link="imu"/>
+    <origin xyz="${imu_x} ${imu_y} ${imu_z}" rpy="0 0 0" />
+  </joint>
+
+  <gazebo reference="imu">
+    <material>Gazebo/Red</material>
+  </gazebo>
+</robot>
+
