@@ -3,7 +3,7 @@
 
 **The main branch is  developed on ros1 noetic.**
 
-![](/home/zhan/agi_sim/imgs/gazebo_rviz.gif)
+![](imgs/gazebo_rviz.gif)
 
 ## Dependencies
 
