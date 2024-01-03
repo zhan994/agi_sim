@@ -27,4 +27,13 @@
    rostopic echo joy
    ```
 
-5. 
+## Run
+
+```bash
+git clone https://github.com/zhan994/agi_sim.git
+cd agi_sim
+catkin_make
+
+roslaunch agi_sim gazebo.launch
+```
+
