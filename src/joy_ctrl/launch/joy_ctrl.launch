@@ -1,4 +1,0 @@
-<launch>
-  <node pkg="joy" type="joy_node" name="joy" />
-  <node pkg="joy_ctrl" type="joy_ctrl_node" name="joy_ctrl" />
-</launch>
