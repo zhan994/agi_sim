@@ -10,6 +10,6 @@
   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find diff_car)/rviz/rviz.rviz" />
   <!-- <node pkg="rqt_plot" type="rqt_plot" name="rqt_plot" /> -->
 
-  <node pkg="joy" type="joy_node" name="joy" />
-  <node pkg="joy_ctrl" type="joy_ctrl_node" name="joy_ctrl" />
+  <node pkg="teleop_twist_keyboard_cpp" type="teleop_node" name="teleop_twist_keyboard" />
+
 </launch>

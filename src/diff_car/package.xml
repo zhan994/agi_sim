@@ -3,7 +3,7 @@
   <name>diff_car</name>
   <version>0.0.0</version>
   <description>The diff_car package</description>
-  <maintainer email="zhan@todo.todo">zhan</maintainer>
+  <maintainer email="zhanzhihao_dt@163.com">zhan</maintainer>
   <license>TODO</license>
   <buildtool_depend>catkin</buildtool_depend>
   <depend>urdf</depend>
