@@ -5,7 +5,7 @@
 
 ![](imgs/gazebo_rviz.gif)
 
-# Dependencies
+## Dependencies
 
 1. ros1 noetic
 
@@ -58,7 +58,7 @@
    rostopic echo /cmd_vel
    ```
 
-# Run
+## Run
 
 ```bash
 git clone https://github.com/zhan994/agi_sim.git
