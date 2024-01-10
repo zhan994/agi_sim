@@ -66,7 +66,7 @@ cd agi_sim
 catkin_make
 
 # >>>>>>>>>>>>>>>>>>>> with joy <<<<<<<<<<<<<<<<<<<<
-roslaunch agi_sim gazebo_joy.launch
+roslaunch diff_car gazebo_joy.launch
 
 # >>>>>>>>>>>>>>>>>>>> with keyboard <<<<<<<<<<<<<<<<<<<<
 # Reading from the keyboard and Publishing to Twist!
@@ -92,6 +92,6 @@ roslaunch agi_sim gazebo_joy.launch
 # e/c : increase/decrease only angular speed by 10%
 
 # CTRL-C to quit
-roslaunch agi_sim gazebo_keyboard.launch
+roslaunch diff_car gazebo_keyboard.launch
 ```
 
