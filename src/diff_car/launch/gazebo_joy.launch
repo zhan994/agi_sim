@@ -7,7 +7,7 @@
   <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
   <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" />
   
-  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find diff_car)/rviz/rviz.rviz" />
+  <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find diff_car)/rviz/rviz.rviz" /> -->
   <!-- <node pkg="rqt_plot" type="rqt_plot" name="rqt_plot" /> -->
 
 
