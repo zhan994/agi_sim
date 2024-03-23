@@ -37,7 +37,7 @@
       <!-- Set to true to publish sensor_msgs/JointState on /joint_states for the wheel joints, defaults to false -->
       <publishWheelJointState>false</publishWheelJointState>
       <!-- Set to true to publish transforms for the odometry, defaults to true -->
-      <publishOdom>true</publishOdom>
+      <publishOdom>false</publishOdom>
     </plugin>
   </gazebo>
 
