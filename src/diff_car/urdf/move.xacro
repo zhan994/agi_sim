@@ -26,8 +26,8 @@
       <wheelTorque>30</wheelTorque>
       <wheelAcceleration>1.8</wheelAcceleration>
       <commandTopic>/cmd_vel</commandTopic>
-      <odometryFrame>odom</odometryFrame>
-      <odometryTopic>/odom</odometryTopic>
+      <odometryFrame>gz_odom</odometryFrame>
+      <odometryTopic>/gz_odom</odometryTopic>
       <robotBaseFrame>base_footprint</robotBaseFrame>
       <!-- Set to true to swap right and left wheels, defaults to true -->
       <legacyMode>false</legacyMode>
@@ -37,7 +37,7 @@
       <!-- Set to true to publish sensor_msgs/JointState on /joint_states for the wheel joints, defaults to false -->
       <publishWheelJointState>false</publishWheelJointState>
       <!-- Set to true to publish transforms for the odometry, defaults to true -->
-      <publishOdom>false</publishOdom>
+      <publishOdom>true</publishOdom>
     </plugin>
   </gazebo>
 
