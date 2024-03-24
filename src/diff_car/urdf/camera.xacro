@@ -3,7 +3,7 @@
   <xacro:property name="camera_length" value="0.01" />
   <xacro:property name="camera_width" value="0.025" />
   <xacro:property name="camera_height" value="0.025" />
-  <xacro:property name="camera_x" value="0.03" />
+  <xacro:property name="camera_x" value="0.02" />
   <xacro:property name="camera_y" value="0.0" />
   <xacro:property name="camera_z" value="${laser_length / 2 + camera_height / 2}" />
 
