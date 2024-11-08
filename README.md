@@ -1,13 +1,11 @@
 # agi_sim
-**A repo. which maintains simulation tools in gazebo for agi-robotics.**
-
-**The main branch is  developed on ros1 noetic.**
+**A repo. which maintains simulation tools in gazebo for agi-robotics on ubuntu20.04.**
 
 ![](imgs/gazebo_rviz.gif)
 
 ## Dependencies
 
-1. ros1 noetic
+1. ROS1 noetic
 
 2. gazebo11
 
